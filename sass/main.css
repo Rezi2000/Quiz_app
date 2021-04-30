@@ -1,0 +1,254 @@
+.hide {
+  display: none;
+}
+
+.welcome {
+  width: 50%;
+  margin: 5% auto;
+}
+
+.welcome .container {
+  padding: 15px;
+  background-color: #dac9b4;
+  border-radius: 5px;
+  -webkit-box-shadow: 5px 5px 15px #161409;
+          box-shadow: 5px 5px 15px #161409;
+}
+
+.welcome input[type=text], .welcome select {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.2rem;
+  margin: 15px 0px 25px 0px;
+  border-radius: 10px;
+}
+
+.welcome label {
+  margin-left: 5px;
+  font-size: 1.5rem;
+}
+
+.welcome .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.welcome .button button {
+  width: 150px;
+  height: 50px;
+  font-size: 1.25rem;
+  padding: 15px;
+  color: white;
+  background-color: #4eb5f1;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.welcome .button button:hover {
+  background-color: #4095c6;
+}
+
+.question {
+  width: 50%;
+  margin: 5% auto;
+  padding: 20px;
+  background-color: #dac9b4;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  -webkit-box-shadow: 5px 5px 15px #161409;
+          box-shadow: 5px 5px 15px #161409;
+}
+
+.question h3 {
+  padding-bottom: 15px;
+}
+
+.question .answers {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.question .answers p {
+  border: 1px solid #4180d3;
+  border-radius: 10px;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.question .answers p:hover {
+  background-color: #d48181;
+}
+
+.question .answers p:active {
+  -webkit-transform: scale(0.97);
+          transform: scale(0.97);
+}
+
+.question hr {
+  margin: 50px 0px 10px 0px;
+}
+
+.question .counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: default;
+}
+
+.question .counter button {
+  width: 100px;
+  height: 50px;
+  font-size: 1.25rem;
+  padding: 15px;
+  color: white;
+  background-color: #4eb5f1;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.question .counter button:hover {
+  background-color: #4095c6;
+}
+
+.clicked, .correct {
+  background-color: #d48181;
+}
+
+.increase {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.correct::after {
+  content: "\2713";
+  float: right;
+}
+
+.wrong {
+  background-color: #c52a2a;
+}
+
+.wrong::after {
+  content: "\2716";
+  float: right;
+}
+
+.finalscore {
+  font-size: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #18ad20;
+}
+
+.finalscore div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.finalscore button {
+  margin: 25px 25px 0px 25px;
+  width: 150px;
+  height: 50px;
+  font-size: 1.25rem;
+  padding: 15px;
+  color: white;
+  background-color: #4eb5f1;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.finalscore button:hover {
+  background-color: #4095c6;
+}
+
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  outline: none;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, right top, from(#485563), to(#29323c));
+  background: linear-gradient(to right, #485563, #29323c);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+button:active {
+  opacity: 0.8;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  text-align: center;
+  margin-top: 20px;
+  color: #dab166;
+}
+/*# sourceMappingURL=main.css.map */

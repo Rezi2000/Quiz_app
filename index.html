@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" type="text/css" href="./sass/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="./img/icon.png">
+    <script  defer src="./script/index.js"></script>     
+</head>
+<body>
+    <header>
+        <h1>Quiz App</h1>
+    </header>
+    <section class="welcome" id="sectionOne">
+            <form method="GET" class="container">
+                <label for="category">Select Category: </label>
+                <select name="category" id="category">
+                    <option value="0">Any Category</option>
+                    <option value="9">General Knowledge</option>
+                    <option value="10">Entertainment: Books</option>
+                    <option value="11">Entertainment: Film</option>
+                    <option value="12">Entertainment: Music</option>
+                    <option value="13">Entertainment: Musicals &amp; Theatres</option>
+                    <option value="14">Entertainment: Television</option>
+                    <option value="15">Entertainment: Video Games</option>
+                    <option value="16">Entertainment: Board Games</option>
+                    <option value="17">Science &amp; Nature</option>
+                    <option value="18">Science: Computers</option>
+                    <option value="19">Science: Mathematics</option>
+                    <option value="20">Mythology</option>
+                    <option value="21">Sports</option>
+                    <option value="22">Geography</option>
+                    <option value="23">History</option>
+                    <option value="24">Politics</option>
+                    <option value="25">Art</option>
+                    <option value="26">Celebrities</option>
+                    <option value="27">Animals</option>
+                    <option value="28">Vehicles</option>
+                    <option value="29">Entertainment: Comics</option>
+                    <option value="30">Science: Gadgets</option>
+                    <option value="31">Entertainment: Japanese Anime &amp; Manga</option>
+                    <option value="32">Entertainment: Cartoon &amp; Animations</option>
+                </select>
+
+
+                <label for="questions">Number of Questions: </label>
+                <input type="text" id="questions" placeholder="min 1 => max 50" value="10" required>
+    
+               
+    
+                <label for="level">Select Difficulty:</label>
+                <select name="level" id="level">
+                    <option value="0">Any Difficulity</option>
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                  </select>
+
+                  <div class="button">
+                    <button id="start">Start</button>
+                  </div>
+                  
+            </form>
+        
+    </section>
+
+<!-- 
+    <div id="MainDiv">
+        <section class="question" id="question">
+            <h3>2. What is the stage name of English female rapper Mathangi Arulpragasam, who is known for the song "Paper Planes"?</h3>
+            <div class="answers">
+                <p class="answer">M.I.A.</p>
+                <p class="answer clicked correct">K.I.A.</p>
+                <p class="answer">C.I.A.</p>
+                <p class="answer">A.I.A.</p>
+                <div class="increase">1</div>
+        </div>
+    
+        <hr>
+        <div class="counter">
+            <p>2 of 10 Questions</p>
+            <button id="nextBtn">Next</button>
+        </div>    </section>
+
+        </div>
+      -->
+
+
+</body>
+</html>

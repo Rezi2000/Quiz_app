@@ -1,0 +1,37 @@
+@import './config';
+@import './components/_welcome';
+@import './components/question';
+
+
+*,*::before,*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    outline: none;
+}
+
+body{
+    background: linear-gradient(to right, #485563,#29323c);
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    @include ClickEffect();
+
+
+}
+
+
+a{
+    text-decoration: none;
+}
+
+header{
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(218, 177, 102);
+
+}
+

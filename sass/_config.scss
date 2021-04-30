@@ -1,0 +1,16 @@
+@mixin Center(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin ClickEffect(){
+    &:active{
+        opacity: 0.8;
+    }
+}
+
+
+.hide{
+    display: none;
+}
