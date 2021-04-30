@@ -80,7 +80,6 @@ Div.id = "MainDiv"
 
 
 function CreateForm(json){
-    console.log(json)
     let allQuestion = json.length;
 
 
@@ -188,8 +187,6 @@ function nextButton(but,correctAnswer,section){
             if(answers[i].className === "answer clicked correct" ){
                 result ++ 
                 score ++
-                console.log(score)
-                console.log("+1")
             }
 
           
